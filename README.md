@@ -54,6 +54,7 @@ DEPLOYER_PRIVATE_KEY=your_private_key_here
 GEMINI_API_KEY=your_gemini_api_key_here
 
 # Discord Bot
+DISCORD_CLIENT_ID=your_application_id
 DISCORD_BOT_TOKEN=your_discord_bot_token_here
 
 # Deployment Configuration
@@ -83,8 +84,14 @@ npm run deploy
 #### Discord Bot
 
 1. Create a Discord bot on the [Discord Developer Portal](https://discord.com/developers/applications)
-2. Add the bot to your server with appropriate permissions
-3. Copy the bot token to your `.env` file
+2. Add the bot to your server with appropriate permissions(Enable "Message Content Intent" in the bot tab)
+3. Copy the bot token and application id to your `.env` file 
+4. Go to the "OAuth2" → "URL Generator" tab
+5.Select these scopes: bot and applications.commands
+6.Bot permissions: Send Messages, Read Message History, Use Slash Commands (at minimum)
+7.Copy the generated URL and paste it in your browser
+8.Select your server and authorize the bot
+9.Use the /chat command in your Discord server to test the integration
 
 #### Start the Service
 
