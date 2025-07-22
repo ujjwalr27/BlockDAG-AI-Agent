@@ -72,6 +72,11 @@ PORT=3000
 ```bash
 npx hardhat run scripts/deploy.js --network primordial
 ```
+or 
+```bash
+npm run deploy
+```
+
 
 2. Note the deployed contract addresses and update your environment variables accordingly.
 
