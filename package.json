@@ -1,0 +1,54 @@
+{
+  "name": "blockdag-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npx hardhat test",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "deploy": "npx hardhat run scripts/deploy.js --network primordial",
+    "reset-nonce": "npx hardhat run scripts/reset-nonce.js --network primordial",
+    "verify": "npx hardhat run scripts/verify-contracts.js --network primordial",
+    "setup-discord": "node -e \"const { registerCommands } = require('./agents/discord-bot'); registerCommands();\""
+  },
+  "keywords": [
+    "blockdag",
+    "blockchain",
+    "gemini",
+    "ai",
+    "defi",
+    "agent"
+  ],
+  "author": "BlockDAG Developer",
+  "license": "MIT",
+  "type": "commonjs",
+  "description": "Conversational and DeFi agent powered by Gemini, running on the BlockDAG Primordial Testnet",
+  "devDependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.15",
+    "axios": "^1.10.0",
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.0",
+    "ethers": "^6.15.0",
+    "express": "^5.1.0",
+    "hardhat": "^2.26.0",
+    "langchain": "^0.3.30",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/blockdag-agent"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

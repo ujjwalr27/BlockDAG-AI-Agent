@@ -1,0 +1,7 @@
+{
+  "network": "primordial",
+  "chainId": 1043,
+  "testToken": "0x9e457A0d651e66Da69279196dfF520aCbd9776b6",
+  "simpleRouter": "0xE96e215E9aEFD7c023725D6C490769563c5305c3",
+  "deploymentTime": "2025-07-22T17:18:27.939Z"
+}
